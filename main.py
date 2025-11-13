@@ -6,6 +6,7 @@ parser.add_argument("file", help="Your file contains API link")
 args = parser.parse_args()
 
 def create_list_from_file(file):
+    api_list = []
     with open(file, "r") as f:
         for lines in f:
             api_list.append(lines.strip())
